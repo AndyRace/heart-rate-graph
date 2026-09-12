@@ -1,0 +1,48 @@
+{
+  "name": "heart-rate-graph",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "typecheck": "tsc -b",
+    "test": "vitest run --passWithNoTests",
+    "test:integration": "vitest run tests/integration --passWithNoTests",
+    "test:e2e": "playwright test",
+    "test:performance": "npm run build && playwright test -c playwright.performance.config.ts"
+  },
+  "dependencies": {
+    "@noble/hashes": "2.4.0",
+    "@streamparser/json": "0.0.26",
+    "@streamparser/json-whatwg": "0.0.26",
+    "idb": "8.0.3",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "uplot": "^1.6.32"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "@playwright/test": "^1.55.0",
+    "@testing-library/jest-dom": "^6.8.0",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^24.3.0",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.2",
+    "eslint": "^9.35.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "fake-indexeddb": "6.2.5",
+    "jsdom": "^26.1.0",
+    "prettier": "^3.6.2",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.42.0",
+    "vite": "^8.3.0",
+    "vitest": "^5.0.0"
+  }
+}

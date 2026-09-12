@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "target": "ES2022",
+    "lib": ["ES2022", "WebWorker"],
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "isolatedModules": true,
+    "noEmit": true
+  },
+  "include": [
+    "src/worker/**/*.ts",
+    "src/domain/**/*.ts",
+    "src/shared/**/*.ts",
+    "tests/integration/**/*.ts",
+    "tests/fixtures/**/*.ts",
+    "tests/unit/compact-store.test.ts",
+    "tests/unit/display-series.test.ts"
+  ]
+}

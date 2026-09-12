@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "types": ["vite/client", "vitest/globals", "@testing-library/jest-dom", "node"]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "tests/**/*.ts",
+    "tests/**/*.tsx",
+    "vite.config.ts",
+    "playwright.config.ts"
+  ],
+  "exclude": [
+    "src/worker/import-worker.ts",
+    "src/worker/parser-adapter.ts",
+    "src/worker/compact-store.ts",
+    "src/worker/queries.ts",
+    "tests/integration/**",
+    "tests/unit/compact-store.test.ts",
+    "tests/unit/display-series.test.ts"
+  ]
+}
